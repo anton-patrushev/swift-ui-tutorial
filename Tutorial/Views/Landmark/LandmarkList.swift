@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
-    @State private var showFavoritesOnly: Bool = false
+    @Binding var showFavoritesOnly: Bool
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
@@ -40,9 +40,11 @@ struct LandmarkList: View {
 }
 
 struct LandmarkList_Previews: PreviewProvider {
+    @State static var showFavoritesOnly: Bool = false
+    
     static var previews: some View {
         ForEach(["iPhone 12"], id: \.self) { devicename in
-            LandmarkList()
+            LandmarkList(showFavoritesOnly: $showFavoritesOnly)
                 .environmentObject(ModelData())
                 .previewDevice(PreviewDevice(rawValue: devicename))
                 .previewDisplayName(devicename)

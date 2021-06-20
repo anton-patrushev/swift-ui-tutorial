@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showFavoritesOnly: Bool = false
+    
     var body: some View {
-        LandmarkList()
+        LandmarkList(showFavoritesOnly: $showFavoritesOnly)
     }
 }
 
