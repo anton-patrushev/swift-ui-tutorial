@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		920265962690E4B300583C9B /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920265952690E4B300583C9B /* CategoryHome.swift */; };
 		9209E7E226696ECF006A9ED7 /* TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9209E7E126696ECF006A9ED7 /* TutorialApp.swift */; };
 		9209E7E426696ECF006A9ED7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9209E7E326696ECF006A9ED7 /* ContentView.swift */; };
 		9209E7E626696ED2006A9ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9209E7E526696ED2006A9ED7 /* Assets.xcassets */; };
@@ -31,9 +32,12 @@
 		927EDE4E267E3A7A009B84E3 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927EDE4A267E3A7A009B84E3 /* HikeGraph.swift */; };
 		927EDE4F267E3A7A009B84E3 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927EDE4B267E3A7A009B84E3 /* HikeDetail.swift */; };
 		927EDE50267E3A7A009B84E3 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927EDE4C267E3A7A009B84E3 /* HikeView.swift */; };
+		92C03AF72690FB8A00DEA9B6 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C03AF62690FB8A00DEA9B6 /* CategoryRow.swift */; };
+		92C03AF92690FE0600DEA9B6 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C03AF82690FE0600DEA9B6 /* CategoryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		920265952690E4B300583C9B /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		9209E7DE26696ECF006A9ED7 /* Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9209E7E126696ECF006A9ED7 /* TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialApp.swift; sourceTree = "<group>"; };
 		9209E7E326696ECF006A9ED7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		927EDE4A267E3A7A009B84E3 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		927EDE4B267E3A7A009B84E3 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		927EDE4C267E3A7A009B84E3 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		92C03AF62690FB8A00DEA9B6 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		92C03AF82690FE0600DEA9B6 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		920265942690E49B00583C9B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				920265952690E4B300583C9B /* CategoryHome.swift */,
+				92C03AF62690FB8A00DEA9B6 /* CategoryRow.swift */,
+				92C03AF82690FE0600DEA9B6 /* CategoryItem.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		9209E7D526696ECF006A9ED7 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +130,7 @@
 		9209E7FA26697624006A9ED7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				920265942690E49B00583C9B /* Categories */,
 				927EDE48267E3A7A009B84E3 /* Hikes */,
 				92325AD126769B4D0079F999 /* Badges */,
 				923CCD18266C113600875322 /* Helpers */,
@@ -256,13 +273,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C03AF72690FB8A00DEA9B6 /* CategoryRow.swift in Sources */,
 				9209E7E426696ECF006A9ED7 /* ContentView.swift in Sources */,
+				920265962690E4B300583C9B /* CategoryHome.swift in Sources */,
 				927EDE4E267E3A7A009B84E3 /* HikeGraph.swift in Sources */,
 				92325AD0267678860079F999 /* Badge.swift in Sources */,
 				9209E7F326697242006A9ED7 /* MapView.swift in Sources */,
 				927EDE4D267E3A7A009B84E3 /* GraphCapsule.swift in Sources */,
 				9209E7E226696ECF006A9ED7 /* TutorialApp.swift in Sources */,
 				923CCD15266C0FBA00875322 /* FavoriteButton.swift in Sources */,
+				92C03AF92690FE0600DEA9B6 /* CategoryItem.swift in Sources */,
 				927EDE4F267E3A7A009B84E3 /* HikeDetail.swift in Sources */,
 				923CCD1A266CA57D00875322 /* HexagonParameters.swift in Sources */,
 				927EDE47267E391F009B84E3 /* Hike.swift in Sources */,
